@@ -27,6 +27,8 @@ data.data.portfolio.each do |item|
   }
 end
 
+ignore "/dossiers/layout.html"
+
 # proxy(
 #   '/this-page-has-no-template.html',
 #   '/template-file.html',
