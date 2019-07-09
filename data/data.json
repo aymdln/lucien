@@ -8,6 +8,15 @@
       "picture": "images/dossier_1/picture.jpg",
       "images": 13,
       "style": "p_one_third"
+    },
+    {
+      "id" : 2,
+      "type": "Dossier de style",
+      "name": "GOLDEN YEARS",
+      "description": "GOLDEN YEARS est une collection capsule pour la maison CLAUDE MONTANA. Inspiré des années 80, de photographies de Jean-Paul Goude, mixant sportswear et vestiaire classique, le dossier dispose dans l’ordre suivant: d’un board, d’une analyse chronologique du tailleur, de recherches de volume sur stockman, de fiches produits et d’un plan de collection.",
+      "picture": "images/dossier_2/picture.jpg",
+      "images": 13,
+      "style": "p_one_third"
     }
   ]
 }

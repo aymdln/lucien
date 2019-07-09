@@ -14,35 +14,15 @@
 			</li>
 			<li>
 				<a href="#">Illustrations</a>
-				<ul class="sub-menu">
-					<li>
-						<a href="collection1.html">Collection 1</a>
-					</li>
-					<li>
-						<a href="#">Collection 2</a>
-					</li>
-				</ul>
 			</li>
 			<li>
-				<a href="#">Projects</a>
+				<a href="#">Dossiers de style</a>
 				<ul class="sub-menu">
+				<% data.data.portfolio.each do |item| %>
 					<li>
-						<a href="#">Dossier 1</a>
+						<a href="#"><%= item.name %></a>
 					</li>
-					<li>
-						<a href="#">Dossier 2</a>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<a href="blog.html">Designs</a>
-				<ul class="sub-menu">
-					<li>
-						<a href="#">Tailleur 1</a>
-					</li>
-					<li>
-						<a href="#">Tailleur 2</a>
-					</li>
+					<% end %>
 				</ul>
 			</li>
 			<li>
