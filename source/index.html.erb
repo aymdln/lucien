@@ -10,7 +10,9 @@
 				</tr>
 			</tbody>
 		</table>
-		<%= partial 'shared/nav' %>
+		<%= partial("shared/nav", locals: {
+			url_image: "../images/logo.jpg"
+		}) %>
 		<div class="body-wrapper">
 			<div class="header-holder center-relative relative">
 				<div class="header-logo center-text">

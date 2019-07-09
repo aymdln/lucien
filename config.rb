@@ -20,7 +20,11 @@ page '/*.txt', layout: false
 # https://middlemanapp.com/advanced/dynamic-pages/
 
 data.data.portfolio.each do |item|
-  proxy "/dossiers/#{item.id}.html", "/dossiers/template.html"
+  proxy "/dossiers/#{item.id}.html", "/dossiers/template.html", locals: {
+    name: item.name,
+    description: item.description,
+    
+  }
 end
 
 # proxy(

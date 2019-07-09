@@ -1,44 +1,92 @@
-<div id="content" class="site-content content-1170 center-relative">
-	<article>
-		<div class="center-relative clear">
-			<div class="entry-content">
-				<div class="content-wrap">
-					<div class="one margin-0">
-						<img src="demo-images/reopen_item_image01.jpg" alt="" />
-					</div>
-					<div class="clear"></div>
-					<div class="one_half margin-0">
-						<img src="demo-images/reopen_item_image02.jpg" alt="" />
-					</div>
-					<div class="one_half last margin-0">
-						<img src="demo-images/reopen_item_image03.jpg" alt="" />
-					</div>
-					<div class="clear"></div>
-					<br>
-					<br>
-					<div class="one_half ">
-						<p>
-							<b>Project Name:</b>&nbsp;Super Slim Icons<br>
-							<b>Client:</b> Random Dude<br>
-							<b>Year:</b> 2016
-						</p>
-						<br>
-						<div class="text-left">
-							<a href="#" target="_self" class="button ">Download</a>
-						</div>
-					</div>
-					<div class="one_half last ">
-						<p>But they got diff’rent strokes. It takes diff’rent strokes it takes diff’rent strokes to move the
-							world. And if you threw a party.</p>
-						<br>
-						<p>So this is the tale of our castaways they’re here for a long long time. They’ll have to make the best
-							of things its an uphill climb. Doin’ it our way. Nothin’s gonna turn us back now. You would see the
-							biggest gift would be from me and the card attached would say.</p>
-					</div>
-					<div class="clear"></div>
+<html>
+	<%= partial 'shared/head' %>
+	<table class="doc-loader">
+			<tbody>
+				<tr>
+					<td>
+						<img src="../images/giflogo.gif" alt="Loading...">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	<body class="page">
+		<%= partial("shared/nav", locals: {
+			url_image: "../images/logo.jpg"
+		}) %>
+		<div class="body-wrapper">
+			<div class="header-holder center-relative relative">
+				<div class="header-logo center-text">
+					<a href="index.html">
+						<img src="../images/logo.jpg" alt="Logo">
+					</a>
 				</div>
+				<div class="toggle-holder absolute">
+					<div id="toggle">
+						<div class="first-menu-line"></div>
+						<div class="second-menu-line"></div>
+						<div class="third-menu-line"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="content" class="site-content content-1170 center-relative">
+				<article>
+					<div class="center-relative clear">
+						<div class="entry-content">
+							<div class="content-wrap">
+								<div class="one_half margin-0">
+									<img src="../images/dossier_1/1.jpg" alt="" />
+								</div>
+								<div class="one_half margin-0">
+									<img src="../images/dossier_1/2.jpg" alt="" />
+								</div>
+								<div class="one_half last margin-0">
+									<img src="../images/dossier_1/3.jpg" alt="" />
+								</div>
+								<div class="clear"></div>
+								<br>
+								<br>
+								<div class="one_half ">
+									<p>
+										<b>Project Name:</b>&nbsp;<%= name %><br>
+										<b>Client:</b> Random Dude<br>
+										<b>Year:</b> 2016
+									</p>
+									<br>
+									<div class="text-left">
+										<a href="#" target="_self" class="button ">Download</a>
+									</div>
+								</div>
+								<div class="one_half last ">
+									<p><%= description.capitalize %></p>
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</article>
 			</div>
 			<div class="clear"></div>
+			<div class="clear"></div>
+			<!--Footer-->
+			<%= partial 'shared/footer' %>
+			<!-- End .body-border -->
 		</div>
-	</article>
-</div>
+		<!--Load JavaScript-->
+		<script src="../javascripts/jquery.js"></script>
+		<script src='../javascripts/jquery.fitvids.js'></script>
+		<script src='../javascripts/jquery.smartmenus.min.js'></script>
+		<script src='../javascripts/isotope.pkgd.js'></script>
+		<script src='../javascripts/imagesloaded.pkgd.js'></script>
+		<script src='../javascripts/isotope.pkgd.js'></script>
+		<script src='../javascripts/jquery.carouFredSel-6.0.0-packed.js'></script>
+		<script src='../javascripts/jquery.mousewheel.min.js'></script>
+		<script src='../javascripts/jquery.touchSwipe.min.js'></script>
+		<script src='../javascripts/jquery.easing.1.3.js'></script>
+		<script src='../javascripts/imagesloaded.pkgd.js'></script>
+		<script src='../javascripts/jquery.prettyPhoto.js'></script>
+		<script src='../javascripts/jquery.nicescroll.min.js'></script>
+		<script src='../javascripts/main.js'></script>
+	</body>
+</html>
