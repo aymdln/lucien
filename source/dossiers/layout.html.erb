@@ -1,14 +1,14 @@
 <html>
 	<%= partial 'shared/head' %>
-	<table class="doc-loader">
-			<tbody>
-				<tr>
-					<td>
-						<img src="../images/giflogo.gif" alt="Loading...">
-					</td>
-				</tr>
-			</tbody>
-		</table>
+	<%# <table class="doc-loader">
+		<tbody>
+			<tr>
+				<td>
+					<img src="../images/giflogo.gif" alt="Loading...">
+				</td>
+			</tr>
+		</tbody>
+	</table> %>
 	<body class="page">
 		<%= partial("shared/nav", locals: {
 			url_image: "../images/logo.jpg"
@@ -34,15 +34,12 @@
 					<div class="center-relative clear">
 						<div class="entry-content">
 							<div class="content-wrap">
-								<div class="one_third margin-0">
-									<img src="../images/dossier_1/1.jpg" alt="" />
-								</div>
-								<div class="one_third margin-0">
-									<img src="../images/dossier_1/2.jpg" alt="" />
-								</div>
-								<div class="one_third last margin-0">
-									<img src="../images/dossier_1/3.jpg" alt="" />
-								</div>
+								<% images.times do |i| %>
+									<div class="one_third margin-0">
+										<%= tag :img, src: "../images/dossier_#{id}/#{i + 1}.jpg" %>
+										<%# <img src="../images/dossier_1/1.jpg" alt="" /> %>
+									</div>
+								<% end %>
 								<div class="clear"></div>
 								<br>
 								<br>

@@ -23,7 +23,8 @@ data.data.portfolio.each do |item|
   proxy "/dossiers/#{item.id}.html", "/dossiers/layout.html", locals: {
     name: item.name,
     description: item.description,
-    
+    images: item.images,
+    id: item.id
   }
 end
 
