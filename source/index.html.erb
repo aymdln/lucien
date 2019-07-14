@@ -32,7 +32,8 @@
 	<div class="grid" id="portfolio">
 		<div class="grid-sizer"></div>
 		<% data.data.portfolio.each do |item| %>
-			<%= partial("shared/grid_item", locals:  {
+			<% unless item.type == "Illustration" %>
+				<%= partial("shared/grid_item", locals:  {
 						name: item.name,
 						type: item.type,
 						picture: item.picture,
@@ -40,6 +41,7 @@
 						url: item.url,
 						id: item.id
 						}) %>
+			<% end %>
 		<% end %>
 	</div>
 	<div class="clear"></div>
