@@ -19,6 +19,12 @@
       "picture": "images/dossier_2/picture.jpg",
       "images": 9,
       "style": "p_one_third"
+    },
+    {
+      "id" : 2,
+      "type": "Illustration",
+      "images": 10,
+      "style": "p_one_third"
     }
   ]
 }

@@ -20,12 +20,14 @@ page '/*.txt', layout: false
 # https://middlemanapp.com/advanced/dynamic-pages/
 
 data.data.portfolio.each do |item|
-  proxy "/dossiers/#{item.id}.html", "/dossiers/layout.html", locals: {
-    name: item.name,
-    description: item.description,
-    images: item.images,
-    id: item.id
-  }
+  if item.type == "Dossier de style"
+    proxy "/dossiers/#{item.id}.html", "/dossiers/layout.html", locals: {
+      name: item.name,
+      description: item.description,
+      images: item.images,
+      id: item.id
+    }
+  end
 end
 
 ignore "/dossiers/layout.html"
