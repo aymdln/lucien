@@ -25,6 +25,16 @@
       "type": "Illustration",
       "images": 9,
       "style": "p_one_third"
+    },
+    {
+      "id" : 4,
+      "type": "Dossier de style",
+      "url": "dossiers",
+      "name": "PERUVIAN TRIP",
+      "description": "Peruvian Trip est une collection capsule pour SACAI, collection femme automne/hiver. La collection est appuyée sur des recherches textiles, spécialement le tissage.",
+      "picture": "images/dossier_4/picture.jpg",
+      "images": 16,
+      "style": "p_one_third"
     }
   ]
 }
