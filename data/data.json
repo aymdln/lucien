@@ -36,5 +36,12 @@
       "images": 16,
       "style": "p_one_third"
     }
+    ,
+    {
+      "id": 5,
+      "type": "Lookbook",
+      "images": 5,
+      "style": "p_two_third"
+    }
   ]
 }

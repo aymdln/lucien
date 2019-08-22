@@ -1,7 +1,7 @@
 <div class="menu-wraper center-relative">
 	<div class="menu-logo center-text">
 		<a href="/">
-		<%= tag :img, src: url_image, alt: "Logo" %>
+			<%= tag :img, src: url_image, alt: "Logo" %>
 		</a>
 	</div>
 	<nav id="header-main-menu" class="big-menu">
@@ -9,19 +9,21 @@
 			<li>
 				<a href="/">Home</a>
 			</li>
-			<%# <li>
-				<a href="#">About</a>
-			</li> %>
+			<li>
+				<a href="/lookbook/">Lookbook</a>
+			</li>
 			<li>
 				<a href="/illustrations/">Illustrations</a>
 			</li>
 			<li>
 				<a href="#">Dossiers de style</a>
 				<ul class="sub-menu">
-				<% data.data.portfolio.each do |item| %>
-					<li>
-					<%= link_to item.name, "/dossiers/#{item.id}.html" %>
-					</li>
+					<% data.data.portfolio.each do |item| %>
+						<% if item.type == "Dossier de style" %>
+							<li>
+								<%= link_to item.name, "/dossiers/#{item.id}.html" %>
+							</li>
+						<% end %>
 					<% end %>
 				</ul>
 			</li>
@@ -32,4 +34,3 @@
 	</nav>
 	<div class="clear"></div>
 </div>
-

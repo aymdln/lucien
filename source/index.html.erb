@@ -28,21 +28,21 @@
 		<div class="clear"></div>
 	</div>
 	<div class="block content-1170 center-relative">
-	</div>
-	<div class="grid" id="portfolio">
-		<div class="grid-sizer"></div>
-		<% data.data.portfolio.each do |item| %>
-			<% unless item.type == "Illustration" %>
-				<%= partial("shared/grid_item", locals:  {
-						name: item.name,
+		<div class="grid" id="portfolio">
+			<div class="grid-sizer"></div>
+			<% data.data.portfolio.each do |item| %>
+				<% if item.type == "Dossier de style" %>
+					<%= partial("shared/grid_item", locals:  {
+					name: item.name,
 						type: item.type,
 						picture: item.picture,
 						style: item.style,
 						url: item.url,
 						id: item.id
 						}) %>
+				<% end %>
 			<% end %>
-		<% end %>
+		</div>
 	</div>
 	<div class="clear"></div>
 	<div class="clear"></div>
