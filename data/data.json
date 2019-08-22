@@ -24,7 +24,9 @@
       "id" : 3,
       "type": "Illustration",
       "images": 9,
-      "style": "p_one_third"
+      "url": "dossiers",
+      "style": "p_one_third",
+      "picture": "images/illustrations/7.jpg"
     },
     {
       "id" : 4,
