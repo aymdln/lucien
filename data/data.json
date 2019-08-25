@@ -2,7 +2,7 @@
   "portfolio": [
     {
       "id": 5,
-      "type": "Lookbook",
+      "type": "LOOKBOOK",
       "images": 5,
       "url": "lookbook",
       "style": "p_one_third",
@@ -11,7 +11,7 @@
     },
     {
       "id" : 1,
-      "type": "Dossier de style",
+      "type": "DOSSIER DE STYLE",
       "url": "dossiers",
       "name": "NEKO WO KABURU: CAVALERETTES STORIES",
       "description": "élaboration d’une collection de prêt-à-porter féminin pour la maison Thierry Mugler, inspirations principales: le vestiaire classique et cavalier, le vestiaire japonais tiré du film “The Handmaiden” de Park Chan-Wook.",
@@ -21,7 +21,7 @@
     },
     {
       "id" : 2,
-      "type": "Dossier de style",
+      "type": "DOSSIER DE STYLE",
       "url": "dossiers",
       "name": "GOLDEN YEARS",
       "description": "GOLDEN YEARS est une collection capsule pour la maison CLAUDE MONTANA. Inspiré des années 80, de photographies de Jean-Paul Goude, mixant sportswear et vestiaire classique, le dossier dispose dans l’ordre suivant: d’un board, d’une analyse chronologique du tailleur, de recherches de volume sur stockman, de fiches produits et d’un plan de collection.",
@@ -31,7 +31,7 @@
     },
     {
       "id" : 3,
-      "type": "Illustration",
+      "type": "ILLUSTRATION",
       "images": 9,
       "url": "illustrations",
       "style": "p_one_third",
@@ -39,7 +39,7 @@
     },
     {
       "id" : 4,
-      "type": "Dossier de style",
+      "type": "DOSSIER DE STYLE",
       "url": "dossiers",
       "name": "PERUVIAN TRIP",
       "description": "Peruvian Trip est une collection capsule pour SACAI, collection femme automne/hiver. La collection est appuyée sur des recherches textiles, spécialement le tissage.",
@@ -49,9 +49,9 @@
     },
     {
       "id" : 6,
-      "type" : "campaign",
+      "type" : "CAMPAIGN",
       "url": "campaign",
-      "picture": "images/campaign/1.jpg",
+      "picture": "images/campaign/couv.jpeg",
       "images": 6,
       "style": "p_one_third"
     }

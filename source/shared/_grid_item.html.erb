@@ -1,12 +1,12 @@
 <div class="grid-item element-item <%= style %>">
-	<% if type == "Dossier de style" %>
+	<% if type == "DOSSIER DE STYLE" %>
 	<a href="/<%= url %>/<%= id %>.html" >
 	<% elsif %>
 	<a href="<%= url %>" >
 	<% end %>
 		<%= image_tag picture %>
 		<div class="portfolio-text-holder">
-		<% if type == "Dossier de style" %>
+		<% if type == "DOSSIER DE STYLE" %>
 			<p class="portfolio-text"><%= name %></p>
 			<p class="portfolio-type"><%= type %></p>
 			<% else %>

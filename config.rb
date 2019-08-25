@@ -20,7 +20,7 @@ page '/*.txt', layout: false
 # https://middlemanapp.com/advanced/dynamic-pages/
 
 data.data.portfolio.each do |item|
-  if item.type == "Dossier de style"
+  if item.type == "DOSSIER DE STYLE"
     proxy "/dossiers/#{item.id}.html", "/dossiers/layout.html", locals: {
       name: item.name,
       description: item.description,

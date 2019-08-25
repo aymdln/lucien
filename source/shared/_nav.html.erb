@@ -22,7 +22,7 @@
 				<a href="#">Dossiers de style</a>
 				<ul class="sub-menu">
 					<% data.data.portfolio.each do |item| %>
-						<% if item.type == "Dossier de style" %>
+						<% if item.type == "DOSSIER DE STYLE" %>
 							<li>
 								<%= link_to item.name, "/dossiers/#{item.id}.html" %>
 							</li>

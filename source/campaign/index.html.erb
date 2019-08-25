@@ -32,7 +32,7 @@
 			<div class="grid" id="portfolio">
 				<div class="grid-sizer"></div>
 				<% data.data.portfolio.each do |item| %>
-					<% if item.type == "campaign" %>
+					<% if item.type == "CAMPAIGN" %>
 						<% item.images.times do |i| %>
 							<%= partial("shared/grid_illu", locals:  {
 								image: "images/campaign/#{i + 1}.jpg",
