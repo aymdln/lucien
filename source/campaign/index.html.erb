@@ -32,12 +32,11 @@
 			<div class="grid" id="portfolio">
 				<div class="grid-sizer"></div>
 				<% data.data.portfolio.each do |item| %>
-					<% if item.type == "Lookbook" %>
+					<% if item.type == "campaign" %>
 						<% item.images.times do |i| %>
-							<%= partial("shared/grid_look", locals:  {
-								image: "images/lookbook/#{i + 1}.jpg",
-                style: item.style,
-                style_page: item.style_page
+							<%= partial("shared/grid_illu", locals:  {
+								image: "images/campaign/#{i + 1}.jpg",
+								style: item.style
 							}) %>
 						<% end %>
 					<% end %>

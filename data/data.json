@@ -1,12 +1,21 @@
 {
   "portfolio": [
     {
+      "id": 5,
+      "type": "Lookbook",
+      "images": 5,
+      "url": "lookbook",
+      "style": "p_one_third",
+      "style_page": "p_two_third",
+      "picture": "images/lookbook/couv.jpeg"
+    },
+    {
       "id" : 1,
       "type": "Dossier de style",
       "url": "dossiers",
       "name": "NEKO WO KABURU: CAVALERETTES STORIES",
       "description": "élaboration d’une collection de prêt-à-porter féminin pour la maison Thierry Mugler, inspirations principales: le vestiaire classique et cavalier, le vestiaire japonais tiré du film “The Handmaiden” de Park Chan-Wook.",
-      "picture": "images/dossier_1/picture.jpg",
+      "picture": "images/dossier_1/picture.jpeg",
       "images": 13,
       "style": "p_one_third"
     },
@@ -24,9 +33,9 @@
       "id" : 3,
       "type": "Illustration",
       "images": 9,
-      "url": "dossiers",
+      "url": "illustrations",
       "style": "p_one_third",
-      "picture": "images/illustrations/7.jpg"
+      "picture": "images/illustrations/couv.jpeg"
     },
     {
       "id" : 4,
@@ -37,13 +46,14 @@
       "picture": "images/dossier_4/picture.jpg",
       "images": 16,
       "style": "p_one_third"
-    }
-    ,
+    },
     {
-      "id": 5,
-      "type": "Lookbook",
-      "images": 5,
-      "style": "p_two_third"
+      "id" : 6,
+      "type" : "campaign",
+      "url": "campaign",
+      "picture": "images/campaign/1.jpg",
+      "images": 6,
+      "style": "p_one_third"
     }
   ]
 }

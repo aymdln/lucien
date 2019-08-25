@@ -2,12 +2,17 @@
 	<% if type == "Dossier de style" %>
 	<a href="/<%= url %>/<%= id %>.html" >
 	<% elsif %>
-	<a href="illustrations" >
+	<a href="<%= url %>" >
 	<% end %>
 		<%= image_tag picture %>
 		<div class="portfolio-text-holder">
+		<% if type == "Dossier de style" %>
 			<p class="portfolio-text"><%= name %></p>
 			<p class="portfolio-type"><%= type %></p>
+			<% else %>
+			<p class="portfolio-text"><%= type %></p>
+			<p class="portfolio-type"><%= type %></p>
+			<% end %>
 		</div>
 	</a>
 </div>
