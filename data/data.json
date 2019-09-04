@@ -54,6 +54,16 @@
       "picture": "images/campaign/couv.jpeg",
       "images": 6,
       "style": "p_one_third"
+    },
+    {
+      "id" : 7,
+      "type" : "DOSSIER DE STYLE",
+      "url": "dossiers",
+      "name": "::CODEPRADA_",
+      "description": "Collection Capsule Accessoire pour la maison PRADA. La collection est en grande partie conçue à partir de matières nobles retravaillées de manières exotiques (cuir embossé, imprimé, gravé), mixées à des matières plus pratiques et solides (pvc, métal, nylon). Automne/Hiver 2019.",
+      "picture": "images/dossier_7/picture.jpg",
+      "images": 24,
+      "style": "p_one_third"
     }
   ]
 }
